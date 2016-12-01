@@ -1,2 +1,6 @@
 @import "header.css";
 @import "content.css";
+
+body {
+    margin: 0px;
+}

@@ -1,4 +1,7 @@
 #content {
+    margin-top: 100px;
     width: 100%;
     float:left;
+    height: 2000px;
+    background-color: grey;
 }
