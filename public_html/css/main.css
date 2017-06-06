@@ -2,11 +2,13 @@
 @import "content.css";
 
 body {
+    text-align: center;
     margin: 0px;
 }
 
 img {
-    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
     width: 30%;
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
@@ -15,4 +17,6 @@ img {
 img:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
+  transition-delay:.2s;
 }
+
