@@ -9,7 +9,9 @@
     <?php
         $files = scandir('img/');
         foreach($files as $file) {
-            echo('file: ' + $file);
+            if(is_file('img/' . $file)) {
+                echo('<img src=img/' . $file . '/>');
+            }
         }
     ?>
 </div>

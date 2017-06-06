@@ -4,3 +4,15 @@
 body {
     margin: 0px;
 }
+
+img {
+    padding: 10px;
+    width: 30%;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
