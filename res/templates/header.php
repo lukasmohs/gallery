@@ -5,6 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Simple Gallery</title>
     <link rel="stylesheet" type="text/css" href="/../../public_html/css/main.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/../../public_html/js/node_modules/jquery-lazyload/jquery.lazyload.js"></script>
 </head>
 <body>
 <div id="header">
