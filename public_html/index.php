@@ -2,10 +2,12 @@
     require_once("../res/templates/header.php");
 ?>
 
-
-
 <div id="content">
-    <h1> Welcome </h1>
+    <h1> 
+        <?php
+        echo($_GET["alb"]);
+        ?>
+    </h1>
     <?php
         $files = scandir('img/' . $_GET["alb"]);
         foreach($files as $file) {

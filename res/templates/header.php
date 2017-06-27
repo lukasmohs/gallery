@@ -20,19 +20,21 @@
 </head>
 <body>
 <div id="header">
-    <ul class="nav nav-pills">
-        <?php
-            $results = scandir("img/");
-            foreach ($results as $result) {
-                if ($result === '.' or $result === '..') continue;
-                if (is_dir("img/" . $result)) {
-                    echo("<li role='presentation'");
-                    if($_GET["alb"] == $result) {
-                        echo("class='active'");
+    <div id="navigation-elements">
+        <ul class="nav nav-pills">
+            <?php
+                $results = scandir("img/");
+                foreach ($results as $result) {
+                    if ($result === '.' or $result === '..') continue;
+                    if (is_dir("img/" . $result)) {
+                        echo("<li role='presentation'");
+                        if($_GET["alb"] == $result) {
+                            echo("class='active'");
+                        }
+                        echo("><a href='.?alb=" . $result . "'>" . $result . "</a></li>");
                     }
-                    echo("><a href='.?alb=" . $result . "'>" . $result . "</a></li>");
                 }
-            }
-         ?>
-    </ul>
+             ?>
+        </ul>
+    </div>
 </div>
