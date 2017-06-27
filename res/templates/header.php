@@ -26,12 +26,13 @@
             foreach ($results as $result) {
                 if ($result === '.' or $result === '..') continue;
                 if (is_dir("img/" . $result)) {
-                    echo("<li role='presentation'><a href='.?alb=" . $result . "'>" . $result . "</a></li>");
+                    echo("<li role='presentation'");
+                    if($_GET["alb"] == $result) {
+                        echo("class='active'");
+                    }
+                    echo("><a href='.?alb=" . $result . "'>" . $result . "</a></li>");
                 }
             }
          ?>
-        <li role="presentation" class="active"><a href="#">A</a></li>
-        <li role="presentation"><a href="#">B</a></li>
-        <li role="presentation"><a href="#">C</a></li>
     </ul>
 </div>

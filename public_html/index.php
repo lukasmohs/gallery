@@ -8,11 +8,10 @@
     <h1> Welcome </h1>
     <?php
         $files = scandir('img/' . $_GET["alb"]);
-
         foreach($files as $file) {
-            if(is_file('img/' . $file)) {
+            if(is_file('img/' . $_GET["alb"] .'/'. $file)) {
                 for($i=0;$i<10;$i++){
-                    echo('<div class="col-md-6"> <img class="lazy" data-original=img/' . $file . '/></div>');
+                    echo('<div class="col-md-6"> <img class="lazy" data-original=img/' . $_GET["alb"] .'/'. $file . '/></div>');
                 }
             }
         }
