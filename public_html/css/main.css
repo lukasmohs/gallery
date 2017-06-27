@@ -7,9 +7,9 @@ body {
 }
 
 img {
+    max-width:100%;
     border-radius: 5px;
     margin: 10px;
-    width: 30%;
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
@@ -17,6 +17,6 @@ img {
 img:hover {
   filter: none;
   -webkit-filter: grayscale(0%);
-  transition-delay:.2s;
+  transition-delay:.1s;
 }
 
